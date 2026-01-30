@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Law Group Johnson County | Experienced Divorce & Family Law Attorneys</title>
+    <meta name="description" content="Compassionate family law attorneys in Johnson County. 20+ years experience in divorce, custody, and family legal matters. Free consultations available.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .credentials-banner {
+            background: #fbbf24;
+            color: #000;
+            padding: 0.75rem 2rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .hero {
+            background: linear-gradient(rgba(76, 29, 149, 0.9), rgba(109, 40, 217, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%236d28d9" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero .qualification {
+            background: rgba(251, 191, 36, 0.2);
+            border: 2px solid #fbbf24;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        .cta-button {
+            background: #fbbf24;
+            color: #000;
+            padding: 1rem 2.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .credentials-section {
+            background: #faf5ff;
+            padding: 3rem 2rem;
+            margin: -3rem -2rem 3rem -2rem;
+        }
+        .credentials-section h2 {
+            text-align: center;
+            color: #4c1d95;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .credential-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 4px solid #6d28d9;
+        }
+        .credential-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .credential-card h3 {
+            color: #4c1d95;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .credential-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #4c1d95;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #6d28d9;
+        }
+        .service-card h3 {
+            color: #4c1d95;
+            margin-bottom: 0.75rem;
+            font-size: 1.15rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .why-choose-section {
+            background: white;
+            padding: 3rem 2rem;
+            margin: 3rem -2rem;
+            border-top: 3px solid #6d28d9;
+            border-bottom: 3px solid #6d28d9;
+        }
+        .why-choose-section h2 {
+            text-align: center;
+            color: #4c1d95;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .reason-card {
+            padding: 1.5rem;
+            background: #faf5ff;
+            border-radius: 8px;
+            border-left: 4px solid #fbbf24;
+        }
+        .reason-card h3 {
+            color: #4c1d95;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .reason-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+        .compassion-banner {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+            border: 3px solid #fbbf24;
+        }
+        .compassion-banner h3 {
+            color: #92400e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .compassion-banner p {
+            color: #78350f;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .cta-section {
+            background: #4c1d95;
+            color: white;
+            padding: 3rem 2rem;
+            margin: 3rem -2rem;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-section .phone-large {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #4c1d95;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+        .trust-badge {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            color: #92400e;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #6d28d9;
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer .phone {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Family Law Group Johnson County</div>
+            <div class="phone">📞 (913) 730-6638</div>
+        </div>
+    </header>
+
+    <div class="credentials-banner">
+        ✓ 20+ Years Family Law Experience • Board Certified Attorneys • Compassionate Representation • Proven Results
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experienced Family Law Attorneys You Can Trust</h1>
+            <div class="qualification">
+                Board Certified Family Law Specialists | Over 20 Years Experience
+            </div>
+            <p>When your family's future is at stake, trust experienced attorneys who combine legal excellence with genuine compassion.</p>
+            <a href="#contact" class="cta-button">Schedule Free Consultation →</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="credentials-section">
+            <h2>Professional Credentials & Experience</h2>
+            <div class="credentials-grid">
+                <div class="credential-card">
+                    <div class="icon">⚖️</div>
+                    <h3>Board Certified</h3>
+                    <p>Kansas Supreme Court Board Certified in Family Law—a distinction held by few attorneys.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="icon">📅</div>
+                    <h3>20+ Years Experience</h3>
+                    <p>Over two decades exclusively practicing family law in Kansas courts.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="icon">🏆</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Hundreds of successful outcomes in divorce, custody, and family law matters.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="icon">🤝</div>
+                    <h3>Personalized Attention</h3>
+                    <p>Direct attorney communication—not handed off to paralegals or junior staff.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="icon">💼</div>
+                    <h3>Trial Experience</h3>
+                    <p>Extensive courtroom experience when settlement isn't possible or in your best interest.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Professional Liability Coverage</h3>
+                    <p>Fully insured with comprehensive malpractice coverage for your protection.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Complete Family Law Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Divorce</h3>
+                    <p>Contested and uncontested divorce, property division, and spousal support matters.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Child Custody</h3>
+                    <p>Legal and physical custody arrangements that prioritize your children's best interests.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Child Support</h3>
+                    <p>Establishing, modifying, or enforcing child support obligations and payments.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Modifications</h3>
+                    <p>Post-divorce modifications of custody, support, or other court orders when circumstances change.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Paternity</h3>
+                    <p>Establishing legal parentage and related custody and support issues.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Protection Orders</h3>
+                    <p>Obtaining or defending against domestic violence protection orders.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Adoption</h3>
+                    <p>Stepparent, relative, and private adoption proceedings.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Prenuptial Agreements</h3>
+                    <p>Drafting and reviewing premarital agreements to protect your interests.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="compassion-banner">
+            <h3>💙 Compassionate Representation During Difficult Times</h3>
+            <p>We understand that family law matters are deeply personal and emotionally challenging. Our approach combines aggressive advocacy for your legal rights with genuine compassion for what you're going through. You'll work directly with experienced attorneys who listen, understand, and fight for the outcome you deserve.</p>
+        </div>
+
+        <section class="why-choose-section">
+            <h2>Why Families Choose Us</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Experience That Matters</h3>
+                    <p>Over 20 years focused exclusively on family law means we've handled thousands of cases similar to yours. We know what strategies work and how to achieve the best possible outcome.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Honest Communication</h3>
+                    <p>We provide realistic assessments of your case—no false promises or unrealistic expectations. You'll always know where you stand and what to expect.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Strategic Approach</h3>
+                    <p>Every case is different. We develop customized strategies based on your specific situation, goals, and what matters most to you.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Cost-Effective Representation</h3>
+                    <p>We work efficiently to minimize legal costs while maximizing results. Transparent fee structures and detailed billing so you know exactly what you're paying for.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Settlement-Focused When Appropriate</h3>
+                    <p>When possible, we negotiate favorable settlements that save time, money, and emotional stress—but we're always prepared for trial when necessary.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Your Children Come First</h3>
+                    <p>In custody matters, we prioritize your children's wellbeing while protecting your parental rights. Practical solutions that work for your family.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-section">
+            <h2>Schedule Your Free Consultation</h2>
+            <p>Discuss your situation with an experienced family law attorney at no cost</p>
+            <div class="phone-large">📞 (913) 730-6638</div>
+            <p>Confidential consultations available</p>
+        </div>
+
+        <section class="form-section" id="contact">
+            <h2>Request Consultation</h2>
+            <p class="subtitle">A family law attorney will review your situation and explain your options</p>
+            
+            <div class="trust-badge">
+                🛡️ Confidential • Board Certified Attorneys • 20+ Years Experience
+            </div>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="JCO-DIVLAW-001">
+                <input type="hidden" name="market" value="Johnson County">
+                <input type="hidden" name="industry" value="Divorce/Family Lawyers">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="familylawgroupjoco.com">
+                
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="case_type">Type of Case *</label>
+                    <select id="case_type" name="case_type" required>
+                        <option value="">Select case type...</option>
+                        <option value="Divorce">Divorce</option>
+                        <option value="Child Custody">Child Custody</option>
+                        <option value="Child Support">Child Support</option>
+                        <option value="Modification">Modification</option>
+                        <option value="Paternity">Paternity</option>
+                        <option value="Protection Order">Protection Order</option>
+                        <option value="Adoption">Adoption</option>
+                        <option value="Prenuptial Agreement">Prenuptial Agreement</option>
+                        <option value="Other/Multiple">Other/Multiple</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="marital_status">Current Marital Status *</label>
+                    <select id="marital_status" name="marital_status" required>
+                        <option value="">Select status...</option>
+                        <option value="Married - Considering Divorce">Married - Considering Divorce</option>
+                        <option value="Separation in Progress">Separation in Progress</option>
+                        <option value="Divorce Filed">Divorce Filed</option>
+                        <option value="Divorced - Post-Decree Issue">Divorced - Post-Decree Issue</option>
+                        <option value="Never Married">Never Married</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="children">Do You Have Children? *</label>
+                    <select id="children" name="children" required>
+                        <option value="">Select...</option>
+                        <option value="Yes - Minor Children">Yes - Minor Children</option>
+                        <option value="Yes - Adult Children">Yes - Adult Children</option>
+                        <option value="No Children">No Children</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Describe Your Situation *</label>
+                    <textarea id="details" name="details" required placeholder="Please provide details about your family law matter..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Free Consultation →</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Family Law Group Johnson County. Board Certified Family Law Attorneys.</p>
+        <div class="phone">📞 (913) 730-6638</div>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Serving Overland Park, Olathe, Lenexa, Shawnee, Leawood & All of Johnson County, KS</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
